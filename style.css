@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #c2cbcf;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 700px;
+    background-color: #1f2120;
+    border-radius: 25px;
+}
+
+.left-side {
+    width: 400px;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    background-image: url(1bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.pic-gradient {
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #9c8689 10%, #423537 100%);
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+.left-side:hover {
+    transform: scale(1.1) perspective(2500px) rotateY(5deg);
+}
+
+.todays-information {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.todays-information h4 {
+    font-size: 1.5rem;
+}
+
+.temperature-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    margin-left: -5rem;
+    font-size: 3rem;
+    bottom: -18rem;
+    line-height: 1.2;
+}
+
+.temperature {
+    font-size: 4rem;
+}
+
+.weather {
+    font-size: 2rem;
+}
+
+.bottom-side {
+    height: 30%;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+}
+
+.value {
+    float: right;
+}
+
+.days-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0px 35px;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+}
+
+.days-list li {
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.days-list li:hover {
+    transform: scale(1.1);
+    background: #fff;
+    color: #222831;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.lookup-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    background: #5e4437;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lookup-button:hover {
+    background: #fff;
+    color: #5e4437;
+}

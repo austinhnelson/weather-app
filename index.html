@@ -2,16 +2,75 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="style.css">
-    <title>Austin Nelson's Weather App</title>
+    <title>Austin's Weather App</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="left-side">
+            <div class="pic-gradient"></div>
+            <div class="todays-information">
+                <h4>Friday 5:00 PM</h4>
+                <div class="date">22 September 2023</div>
+                <div class="location">
+                    <i class="ri-map-pin-line"></i>
+                    <span>Paris, FR</span>
+                </div>
+                <div class="temperature-info">
+                    <i class="ri-rainy-line"></i>
+                    <div class="temperature">22°</div>
+                    <div class="weather">Rainy</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-side">
+            <div class="weather-info">
+                <div>
+                    <span class="title">Precipitation</span>
+                    <span class="value">70 %</span>
+                </div>
+                <div>
+                    <span class="title">Humidity</span>
+                    <span class="value">6 %</span>
+                </div>
+                <div>
+                    <span class="title">Wind Speed</span>
+                    <span class="value">13 mph</span>
+                </div>
+            </div>
+            <ul class="days-list">
+                <li>
+                    <i class="ri-sun-cloudy-line"></i>
+                    <div class="day">Mon</div>
+                    <div class="day-temp">22°</div>
+                </li>
+                <li>
+                    <i class="ri-sun-line"></i>
+                    <div class="day">Tues</div>
+                    <div class="day-temp">22°</div>
+                </li>
+                <li>
+                    <i class="ri-hail-line"></i>
+                    <div class="day">Wed</div>
+                    <div class="day-temp">22°</div>
+                </li>
+                <li>
+                    <i class="ri-foggy-line"></i>
+                    <div class="day">Thur</div>
+                    <div class="day-temp">22°</div>
+                </li>
+            </ul>
 
-    <script src="script.js"></script>
+            <div class="btn-container">
+                <button class="lookup-button">Change location</button>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
